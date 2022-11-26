@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>⦿</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ohmmmmmmmmm" />
+    <meta name="theme-color" content="#000" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="/om.png">
+
+		<link rel="manifest" cross-origin="use-credentials" href="manifest.json" />
+    <link rel="text/font" href="fonts/Fredoka-Regular.ttf" />
+    <link rel="text/font" href="fonts/NovaMono-Regular.ttf" />
+    <link rel="stylesheet" href="styles/global.css" />
+  </head>
+
+  <body>
+    <script type="module" src="/src/index.ts"></script>
+    <main id="renderout"></main>
+    <footer>
+      <script>
+        if ("serviceWorker" in navigator) {
+          window.addEventListener("load", function() {
+            navigator.serviceWorker
+              .register("/service-worker.js")
+              .then(res => console.log("service worker registered"))
+              .catch(err => console.log("service worker not registered", err))
+          })
+        }
+      </script>
+      <!-- DO NOT REMOVE -->
+      <copyright>
+        Copyright &copy; nLucis Creative - All Rights Reserved;
+        Unauthorized copying of this file, or removal of this Copyright notice, via any medium is strictly prohibited;
+        Proprietary and confidential;
+        Written by Arjay Jones (<email>nlucis_creative@proton.me</email>), 👽 2022
+      </copyright>
+    </footer>
+  </body>
+</html>
